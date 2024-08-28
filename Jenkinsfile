@@ -10,12 +10,12 @@ pipeline {
         }
         stage ('npm installation') {
             steps {
-                npm 'install'
+                sh 'npm install'
             }
         }
         stage ('Building the job') {
             steps {
-                npm 'run build'
+                sh 'npm run build'
             }
         }
     }
