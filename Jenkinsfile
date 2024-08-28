@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ('version control') {
             steps {
-                git branch: "${params.BRANCH_TO_BUILD}" url : 'https://github.com/thippareddy03/js-e2e-express-server.git'
+                git branch: "${params.BRANCH_TO_BUILD}", url : 'https://github.com/thippareddy03/js-e2e-express-server.git'
             }
         }
         stage ('npm installation') {
